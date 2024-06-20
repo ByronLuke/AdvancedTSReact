@@ -1,13 +1,11 @@
 import Input from "./components/Input";
 import Button from "./components/Button";
+import Container from "./components/Container";
 
 function App() {
   return(  
   <main>
-    <Input id="name" label="Your name" type="text"></Input>
-    <Input id="age" label="Your Age" type="number"></Input>
-    <Button>A Button</Button>
-    <Button href="https://google.com">A Link</Button>
+    <Container as={Button}>Click me</Container>
   </main>
   )}
 
