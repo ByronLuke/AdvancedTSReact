@@ -1,23 +1,38 @@
-import Input from "./components/Input";
+// import Card from "./components/Card";
+// import IconButton from "./components/IconButton";
+// import HeartIcon from "./HeartIcon";
+// import List from "./components/List";
+// import { users, hobbies } from "./components/Users";
+// import Input from "./components/Input";
+import { useRef } from "react";
 import Button from "./components/Button";
 import Container from "./components/Container";
-import Card from "./components/Card";
-import IconButton from "./components/IconButton";
-import HeartIcon from "./HeartIcon";
-import List from "./components/List";
-import { users, hobbies } from "./components/Users";
+import Input from "./components/Input";
 
 function App() {
-
+  const input = useRef<HTMLInputElement>(null)
   return (
     <main>
-      <Input id="name" label="Your name" type="text"></Input>
+      <Input label="Test" id="test" ref={input}></Input>
+      </main>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+//All This would be in main, but they are simply component integration examples
+      {/* <Input id="name" label="Your name" type="text"></Input>
       <Input id="age" label="Your Age" type="number"></Input>
       <Button>A Button</Button>
       <Button href="https://google.com">A Link</Button>
-
-      <Container as={Button}>Click me</Container>
-
+   
       <Card
         title="My Card"
         actions={
@@ -49,9 +64,4 @@ function App() {
         <List 
         items={hobbies}
         renderItem={(hobby)=> <li key={hobby}>{hobby}</li>}/>
-      </section>
-    </main>
-  );
-}
-
-export default App;
+      </section> */}
